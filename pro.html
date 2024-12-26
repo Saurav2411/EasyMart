@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EazyMart | Redefining Shopping</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Eazy<span>Mart</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn">Sign In</a></li>
+                </ul>
+                <div class="nav_mobile">
+                    <div><i class="fa-solid fa-bars" onclick="hamMenu()"></i></div>
+                    <div class="logo">Eazy<span>Mart</span></div>
+                </div>
+            </nav>
+        </div>
+        <div class="nav_mobile_menu_hide">
+            <div><a href="#home">Home</a></div>
+            <div><a href="#products">Products</a></div>
+            <div><a href="#about">About</a></div>
+            <div><a href="#contact">Contact</a></div>
+        </div>
+        </div>
+    </header>
+
+    <!-- backdrop -->
+    <div class="backDrop_hide" onclick="closeMenu()"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Fashion. Your Way.</h1>
+            <p>Experience the joy of online shopping with premium products and offers tailored for you.</p>
+            <a href="#products" class="btn primary-btn">Explore Now</a>
+        </div>
+    </section>
+    <section>
+        <div class="Dropform">
+            <form class="form" id="userForm">
+                <button type="button" class="close">X</button>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button class="Submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Handpicked selections just for you.</p>
+            <div class="product-list">
+                <div class="product-card">
+                    <div class="imageContainer">
+                        <img src="images/adrian-ordonez-P0W27GRvyww-unsplash.jpg" alt="Product 1">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(0)"></i></div>
+
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
+                    </div>
+                    <h3>Stylish Jacket</h3>
+                    <p><span>&#8377;</span>4599</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+
+                </div>
+                <div class="product-card ">
+                    <div class="imageContainer ">
+                        <img src="images/xavier-teo-SxAXphIPWeg-unsplash.jpg " alt="Product 2 ">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(1)"></i></div>
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
+                    </div>
+
+                    <h3>Classic Sneakers</h3>
+                    <p><span>&#8377;</span>3999</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+                </div>
+                <div class="product-card ">
+                    <div class="imageContainer ">
+                        <img src="images/the-nix-company-ooPXbJ22UIk-unsplash.jpg " alt="Product 3 ">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(2)"></i></div>
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
+                    </div>
+
+                    <h3>Elegant Watch</h3>
+                    <p><span>&#8377;</span>2999</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion question section -->
+    <section id="Ques" class="Ques">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(event)">
+                    What is EazyMart?
+                </button>
+                    <div class="accordion-content">
+                        <p>EazyMart is an online platform offering a wide range of premium products at competitive prices.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(event)">
+                    How can I place an order?
+                </button>
+                    <div class="accordion-content">
+                        <p>You can browse our products, add them to the cart, and proceed to checkout to place an order.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(event)">
+                    What payment methods are accepted?
+                </button>
+                    <div class="accordion-content">
+                        <p>We accept various payment methods including credit/debit cards, net banking, and UPI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Counter Section -->
+    <section id="Counter" class="Counter">
+        <div class="Contain">
+            <div class="stats">
+                <div class="stat-item">
+                    <h3 id="satisfied-customers"><span>0</span> <span>+</span></h3>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="total-orders"><span>0</span><span>+</span></h3>
+                    <p>Total Orders</p>
+                </div>
+                <div class="stat-item">
+                    <h3 id="global-reach"><span>0</span><span>+</span></h3>
+                    <p>Global Reach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- About Section -->
+    <section class="about ">
+        <div class="container ">
+            <h2 class="aboutS ">About</h2>
+            <p>At EazyMart, we are passionate about redefining your shopping experience. With a wide range of products, seamless delivery, and unbeatable prices, we are here to make shopping fun, easy, and rewarding.</p>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer ">
+        <div class="container ">
+            <p>&copy; 2024 EazyMart | Designed for a smarter shopping experience.</p>
+            <div class="socials">
+                <a href="# ">Facebook</a> | <a href="# ">Instagram</a> | <a href="# ">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- javaScript part -->
+
+    <script>
+        function hamMenu() {
+
+            document.querySelector(".nav_mobile_menu_hide").classList.toggle("nav_mobile_menu_show");
+
+            // dackdrop
+            document.querySelector(".backDrop_hide").classList.toggle("backDrop_show");
+            document.body.classList.toggle("freeze ")
+        }
+
+
+        function closeMenu() {
+            document.querySelector(".nav_mobile_menu_hide").classList.remove("nav_mobile_menu_show");
+
+            document.querySelector(".backDrop_hide").classList.remove("backDrop_show");
+            document.body.classList.remove("freeze ")
+
+        }
+
+
+        function like(a) {
+            document.querySelectorAll(".fa-heart")[a].classList.toggle("fa-heart_red")
+
+        }
+
+
+        // for dropForm
+
+        // Function to show the form and backdrop
+        const timeoutForm = () => {
+            document.querySelector(".Dropform").classList.add("main_show");
+        };
+        let Time = setTimeout(timeoutForm, 3000);
+
+
+        // Function to close the form and cancel the timeout
+        document.querySelector(".close").addEventListener("click", () => {
+            document.querySelector(".Dropform").classList.remove("main_show");
+            clearTimeout(Time);
+        });
+
+
+        //accordion
+
+        function toggleAccordion(e) {
+            // Toggle the active class on the accordion item
+            e.target.parentElement.classList.toggle('active');
+
+        }
+
+        //automatic counter
+
+        var count = 0;
+        let sC = 5000;
+        let tO = 400;
+        let gR = 14;
+        let Interval = setInterval(() => {
+            if (count < sC) {
+                document.querySelector("#satisfied-customers").innerHTML = ++count;
+            } else {
+                clearInterval(Interval);
+                console.log(count);
+            }
+        }, 50)
+        let Interval2 = setInterval(() => {
+                if (count < tO) {
+                    document.querySelector("#total-orders").innerHTML = ++count;
+                } else {
+                    clearInterval(Interval2);
+                    console.log(count);
+                }
+            },
+            50)
+        let Interval3 = setInterval(() => {
+            if (count < gR) {
+                document.querySelector("#global-reach").innerHTML = ++count;
+            } else {
+                clearInterval(Interval3);
+                console.log(count);
+            }
+        }, 50)
+    </script>
+
+
+
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "
+        integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz "
+        crossorigin = "anonymous "
+    </script>
+
+</body>
+
+</html>
