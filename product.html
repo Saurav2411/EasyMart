@@ -41,47 +41,54 @@
     <!-- backdrop -->
     <div class="backDrop_hide" onclick="closeMenu()"></div>
 
-    <!-- Cart Section -->
-    <section class="cart">
+
+
+    <!-- Products Section -->
+    <section class="products">
         <div class="container">
-            <h2 class="section-title">Your Cart</h2>
-            <div class="cart-items">
-                <!-- Cart Item -->
-                <div class="cart-item">
-                    <img src="../images/product1.jpg" alt="Product 1" class="cart-item-image">
-                    <div class="cart-item-details">
-                        <h3>Product Name 1</h3>
-                        <p>Price: ₹1000</p>
-                        <p>Quantity:
-                            <input type="number" min="1" value="1" class="quantity-input">
-                        </p>
-                    </div>
-                    <button class="btn secondary-btn remove-item">Remove</button>
-                </div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Handpicked selections just for you.</p>
+            <div class="product-list">
+                <div class="product-card">
+                    <div class="imageContainer">
+                        <img src="images/adrian-ordonez-P0W27GRvyww-unsplash.jpg" alt="Product 1">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(0)"></i></div>
 
-                <!-- Another Cart Item -->
-                <div class="cart-item">
-                    <img src="../images/product2.jpg" alt="Product 2" claass="cart-item-image">
-                    <div class="cart-item-details">
-                        <h3>Product Name 2</h3>
-                        <p>Price: ₹2000</p>
-                        <p>Quantity:
-                            <input type="number" min="1" value="1" class="quantity-input">
-                        </p>
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
                     </div>
-                    <button class="btn secondary-btn remove-item">Remove</button>
-                </div>
-            </div>
+                    <h3>Stylish Jacket</h3>
+                    <p><span>&#8377;</span>4599</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+                    <button class="btn secondary-btn ">Add Cart</button>
 
-            <!-- Total Section -->
-            <div class="cart-total">
-                <h3>Total: ₹3000</h3>
-                <button class="btn primary-btn">Proceed to Checkout</button>
+                </div>
+                <div class="product-card ">
+                    <div class="imageContainer ">
+                        <img src="images/xavier-teo-SxAXphIPWeg-unsplash.jpg " alt="Product 2 ">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(1)"></i></div>
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
+                    </div>
+
+                    <h3>Classic Sneakers</h3>
+                    <p><span>&#8377;</span>3999</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+                    <button class="btn secondary-btn ">Add Cart</button>
+                </div>
+                <div class="product-card ">
+                    <div class="imageContainer ">
+                        <img src="images/the-nix-company-ooPXbJ22UIk-unsplash.jpg " alt="Product 3 ">
+                        <div class="heart position-absolute top-0 end-0 "> <i class="fa-solid fa-heart " onclick="like(2)"></i></div>
+                        <div class="kart position-absolute top-0 end-0 mt-4 "><i class="fa-solid fa-cart-shopping "></i></div>
+                    </div>
+
+                    <h3>Elegant Watch</h3>
+                    <p><span>&#8377;</span>2999</p>
+                    <button class="btn secondary-btn ">Buy Now</button>
+                    <button class="btn secondary-btn ">Add Cart</button>
+                </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- javaScript part -->
 
